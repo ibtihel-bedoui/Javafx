@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="783.0" style="-fx-background-color: #3E4455;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fixit.controllers.PrestationsGuiController">
+   <children>
+      <VBox prefHeight="468.0" prefWidth="180.0" style="-fx-background-color: #3E4455;">
+         <children>
+            <ImageView fitHeight="175.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true" translateX="35.0">
+               <image>
+                  <Image url="@../ressources/logo%20fixit.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="203.0" style="-fx-background-color: #3E4455;" text=" Home Page" textAlignment="CENTER" textFill="#fade53">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" translateY="-3.0">
+                     <image>
+                        <Image url="@../ressources/home-icon-silhouette.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="mesprestations" mnemonicParsing="false" prefHeight="65.0" prefWidth="180.0" style="-fx-background-color: #3E4455;" text="Mes prestations" textFill="#fade53">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="mesmessages" mnemonicParsing="false" prefHeight="65.0" prefWidth="180.0" style="-fx-background-color: #3E4455;" text="Mes messages" textFill="#fade53">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="monavancement" mnemonicParsing="false" prefHeight="65.0" prefWidth="180.0" style="-fx-background-color: #3E4455;" text="Avancement personnel" textFill="#fade53">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="186.0" layoutY="11.0" prefHeight="34.0" prefWidth="202.0" text="Mes prestations" textFill="PINK">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lists" layoutX="180.0" layoutY="93.0" prefHeight="344.0" prefWidth="281.0" style="-fx-background-color: #3a4455;" />
+      <ListView fx:id="det" layoutX="474.0" layoutY="93.0" prefHeight="344.0" prefWidth="303.0" style="-fx-background-color: #3a4455;" />
+      <RadioButton fx:id="tout" layoutX="219.0" layoutY="58.0" mnemonicParsing="false" text="Toutes les prestations" textFill="PINK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="traite" layoutX="374.0" layoutY="58.0" mnemonicParsing="false" text="Prestations traitées" textFill="PINK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="ntraite" layoutX="523.0" layoutY="58.0" mnemonicParsing="false" text="Prestations non traitées" textFill="PINK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+   </children>
+</AnchorPane>

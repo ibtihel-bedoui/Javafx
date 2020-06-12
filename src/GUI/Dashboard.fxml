@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="397.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DashboardController">
+   <children>
+      <AnchorPane prefHeight="428.0" prefWidth="238.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <ImageView fitHeight="127.0" fitWidth="159.0" layoutX="42.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/velo%20(1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ajout" layoutX="24.0" layoutY="269.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="42.0" prefWidth="225.0" style="-fx-background-color: transparent;" text="Ajouter Evenement" textFill="#f8f7f7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="affiche" layoutX="24.0" layoutY="335.0" mnemonicParsing="false" onAction="#afficher" prefHeight="42.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Afficher Evenements" textFill="#f8f7f7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/event.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="19.0" layoutY="208.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Accueil" textFill="#f8f7f7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="39.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="29.0" layoutX="42.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/open.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="254.0" fitWidth="380.0" layoutX="318.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bienvenue.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

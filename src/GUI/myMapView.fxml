@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="752.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MyMapViewController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="752.0" prefWidth="601.0">
+         <children>
+            <WebView fx:id="aWebView" prefHeight="548.0" prefWidth="601.0" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#setLocationClicked" prefHeight="48.0" prefWidth="175.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white;" text="Set Location" />
+            <Label fx:id="locationLbl" prefHeight="21.0" prefWidth="87.0" />
+            <Button fx:id="retour" alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="626.0" mnemonicParsing="false" onAction="#Retour" prefHeight="48.0" prefWidth="94.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white;" text="Retour" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="gridPane" prefHeight="331.0" prefWidth="286.0" style="-fx-background-color: #3a4455;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="15.0" layoutY="23.0" prefHeight="25.0" prefWidth="185.0" text="Prestation détails" textFill="PINK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="67.0" text="Nom client :" textFill="#fade53" />
+      <Label layoutX="14.0" layoutY="101.0" text="Nom sous catégorie :" textFill="#fade53" />
+      <Label layoutX="14.0" layoutY="136.0" prefHeight="17.0" prefWidth="102.0" text="Date prestation :" textFill="#fade53" />
+      <Label layoutX="13.0" layoutY="172.0" prefHeight="17.0" prefWidth="123.0" text="Etat prestation :" textFill="#fade53" />
+      <Label layoutX="13.0" layoutY="204.0" prefHeight="17.0" prefWidth="102.0" text="Prix :" textFill="#fade53" />
+      <Label layoutX="11.0" layoutY="236.0" text="Description :" textFill="#fade53" />
+      <Button fx:id="modifier" layoutX="25.0" layoutY="289.0" mnemonicParsing="false" style="-fx-background-color: #fade53;" text="Modifier" textFill="#3a4455">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="supprimer" layoutX="105.0" layoutY="289.0" mnemonicParsing="false" style="-fx-background-color: #fade53;" text="Supprimer" textFill="#3a4455">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="extraire" layoutX="195.0" layoutY="289.0" mnemonicParsing="false" style="-fx-background-color: #fade53;" text="Exporter" textFill="#3a4455">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="nomclient" editable="false" layoutX="127.0" layoutY="63.0" promptText="Nom Client" style="-fx-background-color: #3a4455;" />
+      <TextField fx:id="catégorie" editable="false" layoutX="131.0" layoutY="97.0" prefHeight="25.0" prefWidth="140.0" promptText="Nom sous catégorie" style="-fx-background-color: #3a4455;" />
+      <TextField fx:id="etat" editable="false" layoutX="121.0" layoutY="168.0" promptText="Etat prestation" style="-fx-background-color: #3a4455;" />
+      <TextField fx:id="prix" layoutX="121.0" layoutY="200.0" promptText="Prix" style="-fx-background-color: #3a4455;" />
+      <TextField fx:id="description" editable="false" layoutX="121.0" layoutY="232.0" promptText="Description" style="-fx-background-color: #3a4455;" />
+      <DatePicker fx:id="date" layoutX="108.0" layoutY="132.0" promptText=" Date Prestation" />
+   </children>
+</AnchorPane>
